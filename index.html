@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" class="animated">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="app">
+        <section id="product-imagem">
+            <button id="btn360" onclick="toggle()">
+                <img  src="./assets/btn360.svg"alt="Clique nesse botão para animar o sofa">
+            </button>
+            <button id="btnclose" onclick="toggle()">
+                <img  src="./assets/btnclose.svg"alt="parar animar o sofa">
+            </button>
+                <img src="./assets/sofa.png" alt="sofa" id="static">
+                <img src="./assets/sofa.gif" alt="sofa animado" id="animated"> 
+        </section>
+        <section id="product-details">
+            <h4>CÓDIGO: 42404 </h4>
+            <h1>Sofá Mogard II - Rosé </h1>
+            <p>R$ 4.000</p>
+            <button>ADICIONAR À CESTA</button>
+        </section>
+    </main>
+    <script>
+        function toggle(){
+            document.documentElement.classList.toggle("animated")
+        }
+    </script>
+</body>
+</html>
